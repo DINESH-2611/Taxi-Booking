@@ -19,7 +19,6 @@ class BookTaxiModel {
         }else{
             List<Taxi> freeTaxis=getFreeTaxis(TaxiBookingDatabase.getInstance().getTaxis(),pickup_time, pickupPoint);
             if(freeTaxis.size()==0) {
-                System.out.println("\t\t\tqwertyu");
                 bookTaxiView.showAlert("No taxis are free please try again after some time");
                 return;
             }
